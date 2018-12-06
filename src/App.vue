@@ -39,7 +39,7 @@ export default {
       todo: [
           { role: 'Aprender Vue', checked: true },
           { role: 'Estudar sobre IA', checked: true },
-          { role: 'Estudar sobre DL', checked: false },
+          { role: 'Estudar sobre DL', checked: false }
       ]
     }
   },
@@ -49,6 +49,7 @@ export default {
             role: e.target.value,
             checked: false
         })
+        e.target.value = ""
       },
         removeTask(index) {
           this.todo.splice(index, 1)
